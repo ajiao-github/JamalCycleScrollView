@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CycleScrollView.h"
 
 @interface ViewController : UIViewController
+
+@property (nonatomic)CycleScrollView *cycleScrollView;
 
 
 @end

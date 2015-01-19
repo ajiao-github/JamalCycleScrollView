@@ -14,6 +14,10 @@
 		73BD401C1A6D028C0032CD9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73BD401B1A6D028C0032CD9C /* Images.xcassets */; };
 		73BD401F1A6D028C0032CD9C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73BD401D1A6D028C0032CD9C /* LaunchScreen.xib */; };
 		73BD402B1A6D028C0032CD9C /* JamalCycleScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BD402A1A6D028C0032CD9C /* JamalCycleScrollViewTests.m */; };
+		73BD40381A6D02AF0032CD9C /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BD40351A6D02AF0032CD9C /* CycleScrollView.m */; };
+		73BD40391A6D02AF0032CD9C /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BD40371A6D02AF0032CD9C /* NSTimer+Addition.m */; };
+		73BD403D1A6D05430032CD9C /* title_hd1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BD403B1A6D05430032CD9C /* title_hd1@2x.png */; };
+		73BD403E1A6D05430032CD9C /* title_hd2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BD403C1A6D05430032CD9C /* title_hd2@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,12 @@
 		73BD40241A6D028C0032CD9C /* JamalCycleScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JamalCycleScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BD40291A6D028C0032CD9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73BD402A1A6D028C0032CD9C /* JamalCycleScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JamalCycleScrollViewTests.m; sourceTree = "<group>"; };
+		73BD40341A6D02AF0032CD9C /* CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollView.h; sourceTree = "<group>"; };
+		73BD40351A6D02AF0032CD9C /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollView.m; sourceTree = "<group>"; };
+		73BD40361A6D02AF0032CD9C /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
+		73BD40371A6D02AF0032CD9C /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
+		73BD403B1A6D05430032CD9C /* title_hd1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "title_hd1@2x.png"; path = "JamalCycleScrollView/title_hd1@2x.png"; sourceTree = "<group>"; };
+		73BD403C1A6D05430032CD9C /* title_hd2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "title_hd2@2x.png"; path = "JamalCycleScrollView/title_hd2@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,8 @@
 		73BD40021A6D028C0032CD9C = {
 			isa = PBXGroup;
 			children = (
+				73BD403B1A6D05430032CD9C /* title_hd1@2x.png */,
+				73BD403C1A6D05430032CD9C /* title_hd2@2x.png */,
 				73BD400D1A6D028C0032CD9C /* JamalCycleScrollView */,
 				73BD40271A6D028C0032CD9C /* JamalCycleScrollViewTests */,
 				73BD400C1A6D028C0032CD9C /* Products */,
@@ -85,6 +97,7 @@
 				73BD40131A6D028C0032CD9C /* AppDelegate.m */,
 				73BD40151A6D028C0032CD9C /* ViewController.h */,
 				73BD40161A6D028C0032CD9C /* ViewController.m */,
+				73BD403A1A6D02B20032CD9C /* CycleScrollView */,
 				73BD40181A6D028C0032CD9C /* Main.storyboard */,
 				73BD401B1A6D028C0032CD9C /* Images.xcassets */,
 				73BD401D1A6D028C0032CD9C /* LaunchScreen.xib */,
@@ -117,6 +130,17 @@
 				73BD40291A6D028C0032CD9C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73BD403A1A6D02B20032CD9C /* CycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				73BD40341A6D02AF0032CD9C /* CycleScrollView.h */,
+				73BD40351A6D02AF0032CD9C /* CycleScrollView.m */,
+				73BD40361A6D02AF0032CD9C /* NSTimer+Addition.h */,
+				73BD40371A6D02AF0032CD9C /* NSTimer+Addition.m */,
+			);
+			name = CycleScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +226,8 @@
 				73BD401A1A6D028C0032CD9C /* Main.storyboard in Resources */,
 				73BD401F1A6D028C0032CD9C /* LaunchScreen.xib in Resources */,
 				73BD401C1A6D028C0032CD9C /* Images.xcassets in Resources */,
+				73BD403E1A6D05430032CD9C /* title_hd2@2x.png in Resources */,
+				73BD403D1A6D05430032CD9C /* title_hd1@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +247,8 @@
 			files = (
 				73BD40171A6D028C0032CD9C /* ViewController.m in Sources */,
 				73BD40141A6D028C0032CD9C /* AppDelegate.m in Sources */,
+				73BD40381A6D02AF0032CD9C /* CycleScrollView.m in Sources */,
+				73BD40391A6D02AF0032CD9C /* NSTimer+Addition.m in Sources */,
 				73BD40111A6D028C0032CD9C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
